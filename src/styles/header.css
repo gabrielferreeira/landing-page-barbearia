@@ -1,0 +1,241 @@
+header {
+    display: flex;
+    flex-direction: column;
+
+    background-image: linear-gradient(rgba(29, 29, 29, 0.6), rgba(29, 29, 29, 0.6)), url('../imagens/bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+
+    height: 100vh;
+    width: 100%;
+
+    padding: 1rem 0;
+}
+
+.headerConteiner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .headerConteiner .logo {
+    cursor: pointer;
+}
+
+header .headerConteiner .logo img {
+    width: 180px;
+}
+
+header .headerConteiner nav ul {
+    display: flex;
+    align-items: center;
+}
+
+header .headerConteiner nav ul li {
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+header .headerConteiner nav ul li a {
+    color: var(--bgLight);
+    text-transform: uppercase;
+}
+
+header .headerConteiner nav ul li::after {
+    content: "";
+    width: 0%;
+    display: block;
+    height: 2px;
+    background: var(--bgLight);
+    border-radius: 6px;
+    transition: 0.3s;
+}
+
+header .headerConteiner nav ul li:hover::after {
+    width: 100%;
+}
+
+.menu {
+    display: none;
+    border: 1px solid var(--bgLight);
+    border-radius: 10px;
+    background: transparent;
+    padding: 7px 10px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.menu:hover {
+    background: var(--bgLight);
+}
+
+.menu i {
+    color: var(--bgLight);
+    font-size: 1.2rem;
+    transition: 0.3s;
+}
+
+.menu i:hover {
+    color: var(--fntDark);
+}
+
+.menuMobile {
+    display: none;
+}
+
+header section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+header section h1 {
+    color: var(--bgLight);
+    text-transform: uppercase;
+    font-size: 2rem;
+}
+
+header section p {
+    color: var(--bgLight);
+    margin-top: 2rem;
+    line-height: 1.5rem;
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+header section .btn {
+    padding: 10px;
+    margin-top: 2rem;
+}
+
+
+
+/* RESPONSIVIDADE */
+
+@media(max-width: 768px) {
+    header .headerConteiner .logo img {
+        width: 150px;
+    }
+
+    nav,
+    .btn {
+        display: none;
+    }
+
+    .menu {
+        display: block;
+    }
+
+    header section h1 {
+        text-align: center;
+        font-size: 1.6rem;
+    }
+
+    header section p {
+        text-align: center;
+        font-size: 1rem;
+    }
+
+    header section .plus {
+        display: block;
+        padding: 8px;
+    }
+
+    .menuMobile {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 0;
+        height: 100%;
+        overflow-x: hidden;
+        background: var(--fntDark);
+        z-index: 999;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        transition: 0.3s;
+    }
+
+    .menuMobile .headerMobile {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px;
+    }
+
+    .menuMobile .headerMobile .logo img {
+        width: 120px;
+    }
+
+    .menuMobile .headerMobile .fecharMobile {
+        padding: 5px 8px;
+        border-radius: 6px;
+        border: 1px solid var(--bgLight);
+        background: transparent;
+        cursor: pointer;
+    }
+
+    .menuMobile .headerMobile .fecharMobile i {
+        color: var(--bgLight);
+        font-size: 1rem;
+    }
+
+    .menuMobile .navMobile {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .menuMobile .navMobile ul {
+        display: block;
+    }
+
+    .menuMobile .navMobile ul li {
+        margin-top: 1rem;
+    }
+
+    .menuMobile .btnMobile {
+        padding: 10px;
+        border-radius: 10px;
+        background: var(--btn);
+        color: var(--bgLight);
+        text-align: center;
+        font-size: 1rem;
+        font-weight: 700;
+        margin: 10px auto;
+        opacity: 0.9;
+        cursor: pointer;
+    }
+
+    .menuMobile .btnMobile:hover {
+        opacity: 1;
+    }
+}
+
+@media(max-width: 540px) {
+    .menu {
+        padding: 5px 8px;
+    }
+
+    .menu i {
+        font-size: 1rem;
+    }
+}
+
+@media(max-width: 425px) {
+    header section h1 {
+        font-size: 1.3rem;
+    }
+
+    header section p {
+        font-size: 1rem;
+    }
+
+    header section .plus {
+        padding: 6px;
+    }
+}

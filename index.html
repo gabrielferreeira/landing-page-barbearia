@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Barbearia LifeStyle barber: a arte de esculpir barbas e estilos únicos.">
+    <meta name="keywords" content="lifestyle, barbearia, barba, bigode, corte, masculino, navalha, estilo">
+    <meta name="author" content="Gabriel Lopes">
+    <link rel="shortcut icon" href="src/imagens/favicon.png" type="image/x-icon">
+
+    <!-- FONTWAESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- FONTES -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet" />
+
+    <!-- STYLES -->
+    <link rel="stylesheet" href="src/styles/all.css">
+
+    <title>LifeStyle Barber - Site Oficial</title>
+</head>
+
+<body>
+    <header>
+        <div class="center">
+            <div class="headerConteiner">
+                <a class="logo" href="index.html"><img src="src/imagens/logo.png" alt="Logo"></a>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="#servicos">Serviços</a></li>
+                        <li><a href="#sobre">Sobre</a></li>
+                        <li><a href="#blog">Blog</a></li>
+                        <li><a href="#contato">Contatos</a></li>
+                    </ul>
+                </nav>
+                <a class="btn" href="#">Reserve seu horário</a>
+
+                <button class="menu" onclick="abrirMenu()">
+                    <i class="fa fa-bars" aria-hidden="true"></i>
+                </button>
+
+                <div class="menuMobile" id="menuMobile">
+                    <div class="headerMobile">
+                        <a class="logo" href="index.html"><img src="src/imagens/logo.png" alt="Logo"></a>
+
+                        <button class="fecharMobile" onclick="fecharMenu()">
+                            <i class="fa fa-times" aria-hidden="true"></i>
+                        </button>
+                    </div>
+
+                    <nav class="navMobile">
+                        <ul>
+                            <li><a href="index.html">Inicio</a></li>
+                            <li><a href="#servicos">Serviços</a></li>
+                            <li><a href="#sobre">Sobre</a></li>
+                            <li><a href="#blog">Blog</a></li>
+                            <li><a href="#contato">Contatos</a></li>
+                        </ul>
+                    </nav>
+
+                    <a class="btnMobile" href="#">Reserve seu horário</a>
+                </div>
+
+            </div>
+
+            <section>
+                <h1>Mestres na arte de aparar e esculpir barbas</h1>
+                <p>A "LifeStyle Barber" é uma empresa dedicada a proporcionar uma experiência excepcional de
+                    cuidados com o cabelo e a barba para homens que se cuidam. Com anos de tradição e expertise no ramo
+                    de
+                    beleza e estética, a nossa barbearia se destaca como um oásis de elegância e qualidade, onde os
+                    clientes podem relaxar e se sentir bem-cuidados.</p>
+                <a class="btn plus" href="#sobre">Saiba mais</a>
+            </section>
+        </div>
+    </header>
+
+    <main>
+        <section id="servicos">
+            <div class="center">
+                <h2>O que oferecemos</h2>
+
+                <div class="planos"></div>
+            </div>
+        </section>
+
+        <section id="sobre">
+            <div class="center">
+                <h2>Sobre</h2>
+
+                <div class="sobreContent">
+                    <div class="sobreLeft">
+                        <h3>LifeStyle Barber</h3>
+                        <p>Nossa equipe de barbeiros altamente qualificados é apaixonada por seu ofício. Eles não apenas
+                            realizam cortes de cabelo e tratamentos de barba com precisão, mas também entendem a
+                            importância
+                            de ouvir as necessidades e preferências individuais de cada cliente. Seja você alguém que
+                            procura um corte de cabelo clássico, uma barba bem-aparada ou um estilo moderno e arrojado,
+                            estamos comprometidos em atender às suas expectativas.</p>
+                        <p>Oferecemos uma gama de serviços abrangente que vai além de cortes de cabelo e barba. Nossos
+                            serviços incluem tratamentos de spa para o rosto, tratamentos capilares, tintura de barba e
+                            cabelo, depilação, bem como uma seleção de produtos de alta qualidade para cuidados
+                            pessoais.
+                            Estamos comprometidos em garantir que nossos clientes saiam da barbearia não apenas com uma
+                            aparência renovada, mas também com um aumento na autoestima e confiança.</p>
+                    </div>
+                    <div class="sobreRight">
+                        <img src="src/imagens/empresa.jpg" alt="Imagem da empresa">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="blog">
+            <div class="center">
+                <h2>Blog</h2>
+
+                <div class="post"></div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer id="contato">
+        <div class="center">
+            <div class="location">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d114958.50564050292!2d-80.33668745565113!3d25.78861523856046!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sshopping%20em%20Miami%2C%20Fl%C3%B3rida%2C%20EUA!5e0!3m2!1spt-BR!2sbr!4v1697325969030!5m2!1spt-BR!2sbr"
+                    width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+
+            <div class="footerInfo">
+                <div class="linksFooter">
+                    <h2>Informativo</h2>
+
+                    <div class="links">
+                        <a href="#sobre">Sobre</a>
+                        <a href="#blog">Blog</a>
+                        <a href="#servicos">Serviços</a>
+                    </div>
+                </div>
+
+                <div class="linksFooter">
+                    <h2>Atendimento</h2>
+
+                    <div class="links">
+                        <p>lifestylebarber@lifestylebarber.com.br</p>
+                        <p>(77)97777-7777</p>
+                        <p>(77)98888-8888</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="notificacao">
+                <h2>Fique por dentro das novidades</h2>
+
+                <div class="comunidade">
+                    <div class="email">
+                        <form>
+                            <input class="input" type="email" placeholder="Digite seu melhor e-mail..." required>
+                            <input class="btnInput" type="submit" value="Enviar">
+                        </form>
+                    </div>
+
+                    <div class="social">
+                        <a href="#" target="_blank" class="socialItens">
+                            <i class="fa fa-linkedin" aria-hidden="true"></i>
+                        </a>
+
+                        <a href="#" target="_blank" class="socialItens">
+                            <i class="fa fa-instagram" aria-hidden="true"></i>
+                        </a>
+
+                        <a href="#" target="_blank" class="socialItens">
+                            <i class="fa fa-facebook" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="copyAndMarca">
+                <p class="copy">LifeStyle Barber - <span id="ano"></span> &copy; Todos os direitos reservados.
+                </p>
+                <p class="marca">Desenvolvido por Gabriel Lopes</p>
+            </div>
+        </div>
+    </footer>
+
+    <div class="scrollTop" id="scrollTop" title="Voltar para o topo">
+        <i class="fa fa-arrow-up" aria-hidden="true"></i>
+    </div>
+
+    <a href="#" title="Converse com um de nossos atendentes." target="_blank" class="whatsApp">
+        <i class="fa fa-whatsapp" aria-hidden="true"></i>
+    </a>
+
+    <script src="src/scripts/menu.js"></script>
+    <script src="src/scripts/itens.js"></script>
+    <script src="src/scripts/services.js"></script>
+    <script src="src/scripts/blog.js"></script>
+    <script src="src/scripts/ano.js"></script>
+    <script src="src/scripts/scrollTop.js"></script>
+</body>
+
+</html>
