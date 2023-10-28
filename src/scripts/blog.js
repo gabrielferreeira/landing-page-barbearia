@@ -4,7 +4,7 @@ blog = () => {
     post.map((item) => {
         posts.innerHTML += `
         
-            <div class="postItens">
+            <div class="postItens" data-aos="flip-down">
 
                 <div class="postImg">
                     <img src="src/imagens/`+ item.img + `" alt="">

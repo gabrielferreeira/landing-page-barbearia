@@ -11,7 +11,7 @@ service = () => {
     services.map((item) => {
         planos.innerHTML += `
         
-            <div class="planosItens">
+            <div class="planosItens" data-aos="flip-down">
 
                 <div class="planosImg">
                     <img src="src/imagens/`+ item.img + `" alt="">
